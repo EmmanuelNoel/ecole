@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="icons-1.5.0/font/bootstrap-icons.css">
+
+</head>
+<script src="icons-1.5.0/font/bootstrap-icons.json"></script>
+<script src="icons-1.5.0\font\bootstrap-icons.js" crossorigin="anonymous"></script>
+
+<body background="background-site.jpg">
+    <header class="mx-3 p-3">
+        <div class="container text-center fs-3 fw-bold">
+            L'aventure commence ici 🚀
+        </div>
+    </header>
+
+    <div class="container  mt-3 px-3 gx-3 gy-3 align-items-center mx-auto  p-lg-5 push-3">
+        <form action="gerer.php" method="post">
+
+            <div class="row align-items-center gx-3 gy-3 offset-md-1 offset-lg-4">
+                <div class="mb-3 col-md-4  ">
+                    <div class="d-flex align-items-center ">
+                        <label for="matricule" class="form-label  col-3">Matricule</label>
+                        <input name="matricules" type="number" class="offset-md-1 form-control col-lg-5" id="matricule"
+                            placeholder="17362921" required>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row align-items-center gx-3 gy-3 offset-md-1 offset-lg-4">
+                <div class="mb-3 col-md-4  ">
+                    <div class="d-flex align-items-center ">
+                        <label for="nom" class="form-label  col-3">Nom</label>
+                        <input name="noms" type="text" class="offset-md-1 form-control col-lg-5 " id="nom" placeholder="SOUWOUIN"
+                            required>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row align-items-center gx-3 gy-3 offset-md-1 offset-lg-4">
+                <div class="mb-3 col-md-4  ">
+                    <div class="d-flex align-items-center ">
+                        <label for="prenom" class="form-label col-md-3 col-2">Prénom</label>
+                        <input name="prenoms" type="text" class="offset-1 form-control col-lg-5" id="prenom"
+                            aria-describedby="prenoms" placeholder="Emmanuel" required>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="d-flex  align-tems-center offset-lg-4  offset-md-3 mt-1">
+                <label name="sexe" class="form-label mx-3 offset-md-3 mx-3">Sexe</label>
+                Homme <input name="sexes" value="homme" type="radio" class="form-check-input mx-2 " id="homme">
+                Femme <input name="sexes" value="femme" type="radio" class="form-check-input mx-2" id="femme">
+            </div>
+
+
+
+
+
+            <div class="row align-items-center gx-3 gy-3 offset-md-1 offset-lg-4 mt-1">
+                <div class="mb-3 col-md-4  ">
+                    <div class="d-flex align-items-center ">
+                        <label for="email" class="form-label col-3">Email</label>
+                        <input name="emails" type="email" class="offset-md-1 form-control col-lg-5" id="email"
+                            aria-describedby="prenoms" placeholder="emmanuelsouwouin@gmail.com"  required>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row align-items-center gx-3 gy-3 offset-md-1 offset-lg-4">
+                <div class="mb-3 col-md-4 col-12 ">
+                    <div class="d-flex align-items-center ">
+                        <label for="exampleInputPassword1" class="form-label col-md-3 col-2">Password</label>
+ <input name="passwds" type="password" class="offset-1 form-control col-lg-5" value="passwd" id="exampleInputPassword1"
+          required> 
+                            
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex  align-tems-center offset-lg-4  offset-md-4 mt-3 p-3">
+                <input  type="submit" name="enregistrement" value="enregistrer" class="btn btn-primary mx-2" >
+
+                <input  type="submit" name="affichage" value="afficher" class="btn btn-primary mx-2" >
+
+                <a type="reset" href="inscription.html" class=" btn btn-primary mx-2">Effacer</a>
+                <a href="index.php" class=" btn btn-primary">Quitter</a>
+
+
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+
+</body>
+
+</html>
